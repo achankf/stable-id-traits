@@ -2,16 +2,6 @@ mod cast_usize;
 mod maximum;
 mod predecessor;
 mod successor;
-mod zero;
-
-/**
-The "zero" element of the Id type. Usually it's "0" for numbers or Id(0)
-for id types that are derived from the `derive-stable-id` crate.
- */
-pub trait Zero {
-    /// Returns the "zero" element.
-    fn zero() -> Self;
-}
 
 /**
 Predecessor trait for numbers.
